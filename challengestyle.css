@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,11 +44,19 @@ p strong {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  margin-top: 10px;
+  float: right;
+}
+
+/* Price */
+.price {
+  float: left;
 }
 
 /* Product-info */
 .product-info {
   margin-bottom: 10px;
+  float: left;
 }
 /* Unordered list */
 .mother-lists {
@@ -77,7 +86,7 @@ a:active {
 
 /* Product details */
 .more-details {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 /* Button */
@@ -119,6 +128,9 @@ button:hover {
   display: inline-block;
   margin-right: 10px;
 }
+
+/* This will inheritage all of the properties of .color
+   but not the color, color will be rewritten. */
 .color-blue {
   background-color: blue;
 }
@@ -134,4 +146,23 @@ button:hover {
 }
 .color-brown {
   background-color: #885214;
+}
+
+/* Floating */
+.product-img {
+  float: left;
+}
+
+.block1 {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 243px;
+  float: left;
+}
+
+.block2 {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 243px;
+  float: left;
 }
