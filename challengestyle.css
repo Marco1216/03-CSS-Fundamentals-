@@ -43,20 +43,13 @@ p strong {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  float: right;
 }
 
 /* Price */
-.price {
-  float: left;
-}
 
 /* Product-info */
 .product-info {
   margin-bottom: 10px;
-  float: left;
 }
 /* Unordered list */
 .mother-lists {
@@ -125,8 +118,6 @@ button:hover {
   background-color: black;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 10px;
 }
 
 /* This will inheritage all of the properties of .color
@@ -149,7 +140,7 @@ button:hover {
 }
 
 /* Floating */
-.product-img {
+/* .product-img {
   float: left;
 }
 
@@ -165,4 +156,35 @@ button:hover {
   margin-left: 40px;
   width: 243px;
   float: left;
+} */
+
+/* Flexbox */
+.big-chunk {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.block1 {
+  flex: 1;
+}
+
+.block2 {
+  flex: 1;
+}
+
+.price-shipment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.image {
+  margin-bottom: 0;
 }
