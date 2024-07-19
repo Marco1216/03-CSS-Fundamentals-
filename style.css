@@ -28,17 +28,17 @@ body {
   padding-right: 40px; */
   /* The below is the same as above */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
 }
-
+/* 
 article {
   margin-bottom: 60px;
-}
+} */
 
 .post-hreader {
   margin-bottom: 40px;
@@ -329,28 +329,52 @@ footer {
 }
 
 /* This row here is container of article and aside */
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
   align-items: flex-start;
-}
+} */
 
-article {
-  /* By doing this, it allows
+/* article {
+   By doing this, it allows
      flexbox to figure out the 
-     basis itself. */
+     basis itself. 
   flex: 1;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; */
 
 /* We cannot use width to flex
 instead, we need to use flex-basis */
-aside {
+/* aside {
   /* 
   DEFAULTS:
   flex-grow:0;
   flex-shrink: 1;
-  flex-basis: auto; */
+  flex-basis: auto; 
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+/* This container here is grid container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+/* article {
+}
+
+aside {
+} */
+
+footer {
+  grid-column: 1/-1;
 }
